@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration Form</title>
+</head>
+<body>
+    <h1>Conference Registration Form</h1>
+    <form action="#" method="post">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="200" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+       
+        <label for="country">Country of Residence:</label><br>
+        <select id="country" name="country">
+            <option value="USA">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Malaysia">Malaysia</option>
+        </select><br><br>
+
+        <label for="interest">Area of Interest:</label><br>
+        <input type="checkbox" id="software_dev" name="interest" value="software_dev">
+        <label for="software_dev">Software Development</label><br>
+        <input type="checkbox" id="data_science" name="interest" value="data_science">
+        <label for="data_science">Data Science</label><br>
+        <input type="checkbox" id="cybersecurity" name="interest" value="cybersecurity">
+        <label for="cybersecurity">Cybersecurity</label><br>
+        <input type="checkbox" id="ai" name="interest" value="ai">
+        <label for="ai">Artificial Intelligence</label><br><br>
+
+        <label for="experience">Experience Level:</label><br>
+        <select id="experience" name="experience">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label for="comments">Comments or Questions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
